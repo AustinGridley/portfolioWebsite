@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">        
+        <title>Roman Numeral Translator</title>
+        <link rel="stylesheet" href="pigLatinTranslator.css">
+        <script src="./pigLatinTranslator.js"></script>
+        <noscript>Your browser does not support JavaScript! Sucks to be you!</noscript>
+    </head>
+    <body>
+        <main>
+        <!--Title and Introduction to the website-->
+        <div id= "title">
+            Pig Latin Translator
+        </div>
+        <div class="mainHeadersSection">
+            <a href="http://localhost:8080/toolsHome.html"> 
+                <button type="button" onclick>
+                    Austin's Tools</button></a>
+        </div>
+        <hr>
+        <div class = "textBox">
+            Translate English into Pig Latin: <input type="text" id="input" placeholder= "Can you Count?">
+                    <br>
+                    <br>
+                    <!--game count clicks-->
+                    <!--submit button that shoots off a bunch of functions etc.-->
+                    <div id="button"><button onclick="output()">Submit</button></div>
+        </div> 
+        <div class="badge">
+            <h1 id="originalOutputText">
+                Your original English will be here.
+            </h1>
+            <h2 id="originalOutput">
+                    &nbsp;
+            </h2>
+            <h3 id="romanOutputText">
+                The Pig Latin translation will be here.
+            </h3>
+            <h4 id="romanOutput">
+                &nbsp;
+            </h4>
+            <h6>
+                    <i class="fas fa-piggy-bank"></i>
+                What does the Pig say?
+                <i class="fas fa-piggy-bank"></i>
+            </h6>
+        </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">        
+        <title>Pickleball Score Program</title>
+        <link rel="stylesheet" href="pickleballScore.css">
+        <script src="./pickleballScore.js"></script>
+        <noscript>Your browser does not support JavaScript! Sucks to be you!</noscript>
+        <script src="https://kit.fontawesome.com/797785b0de.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+        <!--Title and Introduction to the website-->
+        <div class= "title">
+        Pickleball Doubles Score
+        </div>
+        <div class="mainHeadersSection">
+                <a href="http://localhost:8080/toolsHome.html"> 
+                    <button type="button" onclick>
+                        Austin's Tools</button></a>
+        </div>
+        <hr>
+        <!-- <div class="gameSection">
+                <a href="http://localhost:8080/diceSimple.html"> 
+                    <button type="button" onclick>
+                        Simple Dice Roll</button>
+                </a> 
+        </div> -->
+        <p id = "header">
+                Game Setup
+        </p>
+        <div class = "textBox">
+                
+            Input the first team's players names. <input type="text" id="input1" placeholder= "Can you Count?">
+                    <br>
+                    <br>
+                    <!--game count clicks-->
+                    <!--submit button that shoots off a bunch of functions etc.-->
+        </div> 
+        <div class = "textBox">
+                Input the second team's players names. <input type="text" id="input2" placeholder= "Can you Count?">
+                        <br>
+                        <br>
+                        <!--game count clicks-->
+                        <!--submit button that shoots off a bunch of functions etc.-->
+                        <div id="button"><button onclick="namesOutput()">Submit</button></div>
+                        <br>
+                        <br>
+                Which team serves first? 
+                <div id="button"><button>Team One</button>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <button onclick="noPoint()">Team Two</button>
+                </div>  
+            </div>
+            <hr>
+        <div class = "textBox">
+            
+                    <!--game count clicks-->
+                    <!--submit button that shoots off a bunch of functions etc.-->
+                    
+                            <div>Who won the rally?</div>
+                            <br>  
+                            <div id="button1"><button onclick="point()">Serving Team</button></div> &nbsp&nbsp&nbsp or the &nbsp&nbsp&nbsp <div id="button2"><button onclick="noPoint()">Receiving Team</button></div>
+                            
+                    </div> 
+                    
+        <div class="badge">
+               
+            <h1 id="originalOutputText">
+                    <i class="fas fa-table-tennis"> </i> Team One's Score is <i class="fas fa-table-tennis"></i>
+            </h1>
+            <h2 id="originalOutput">
+                    0
+            </h2>
+            <h3 id="romanOutputText">
+                    <i class="fas fa-quidditch"></i> Team Two's Score is <i class="fas fa-quidditch"></i>
+            </h3>
+            <h4 id="romanOutput">
+                0
+            </h4>
+            <h6 id="h6">
+                    Team One starts the game with the serve. 0-0-2
+            </h6>
+
+            <div class = "textBox"> 
+                    <!-- Translate a Number to a Roman Numeral: <input type="text" id="input" placeholder= "Can you Count?"> -->
+                    <br>
+                    <br>
+            </div>
+
+        </div> 
+        <div class= "title">
+        Pickleball Singles Score
+        </div>
+        <hr>
+        <p id = "header">
+                Game Setup
+        </p>
+        <div class = "textBox">
+                
+            Input the first player's name. <input type="text" id="input11" placeholder= "Can you Count?">
+                    <br>
+                    <br>
+                    <!--game count clicks-->
+                    <!--submit button that shoots off a bunch of functions etc.-->
+        </div> 
+        <div class = "textBox">
+                Input the second player's name. <input type="text" id="input22" placeholder= "Can you Count?">
+                        <br>
+                        <br>
+                        <!--game count clicks-->
+                        <!--submit button that shoots off a bunch of functions etc.-->
+                        <div id="button"><button onclick="namesOutput1()">Submit</button></div>
+                        <br>
+                        <br>
+                Which player serves first? 
+                <div id="button"><button>Player One</button>  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <button onclick="noPoint1()">Player Two</button>
+                </div>  
+            </div>
+            <hr>
+        <div class = "textBox1">
+            
+                    <!--game count clicks-->
+                    <!--submit button that shoots off a bunch of functions etc.-->
+                    
+                            <div>Who won the rally?</div>
+                            <br>  
+                            <div id="button3"><button onclick="point1()">Serving Player</button></div> &nbsp&nbsp&nbsp or the &nbsp&nbsp&nbsp <div id="button4"><button onclick="noPoint1()">Receiving Player</button></div>
+                            
+                    </div> 
+                    
+        <div class="badge">
+               
+            <h1 id="originalOutputText1">
+                    <i class="fas fa-table-tennis"> </i> Player One's Score is <i class="fas fa-table-tennis"></i>
+            </h1>
+            <h2 id="originalOutput1">
+                    0
+            </h2>
+            <h3 id="romanOutputText1">
+                    <i class="fas fa-quidditch"></i> Player Two's Score is <i class="fas fa-quidditch"></i>
+            </h3>
+            <h4 id="romanOutput1">
+                0
+            </h4>
+            <h6 id="h61">
+                    Player One starts the game with the serve. 0-0
+            </h6>
+
+            <div class = "textBox"> 
+                    <!-- Translate a Number to a Roman Numeral: <input type="text" id="input" placeholder= "Can you Count?"> -->
+                    <br>
+                    <br>
+            </div>
+
+        </div> 
+
+    </main>
+</html>

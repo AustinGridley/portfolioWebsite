@@ -1,0 +1,696 @@
+body {
+    background-color: #726DA8;
+    font-size: 100%;
+}
+.mainHeadersSection{
+  text-align: center;
+  background-image: url("");
+  background-size: 100vw 100vh;
+  width: 1000px;
+  text-align: center;
+  margin: 2.5em auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  }
+.gameSection{
+  text-align: center;
+  background-image: url("");
+  background-size: 100vw 100vh;
+  width: 500px;
+  text-align: center;
+  margin: 2.5em auto;
+  margin-top: 5%;
+  margin-top: 5%;
+}
+.container {
+  /* display: flex;
+  flex-direction: column;
+  align-items: stretch; */
+  column-count: 2;
+  column-width: 50%;
+  margin: 0%;
+}
+  h1 {
+    font-size: 1.25em;
+    text-align: center;
+    color: rgb(49, 38, 38);
+    background-color: #594157;
+    border: 5px solid #594157;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin: 2em auto;
+    width: 320px;
+    margin: 0px;
+    width: 320px;
+    overflow: auto;
+    text-overflow: auto;
+    
+   }
+   h2 {
+    font-size: 1.6em;
+    text-align: center;
+    color: white;
+    background-color: #594157;
+    border: 5px solid #594157;
+    margin: 2em auto;
+    width: 320px;
+    margin: 0px;
+    width: 320px;
+    overflow: auto;
+    text-overflow: auto;
+   }
+   h3 {
+    font-size: 1.25em;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 5px solid white;
+    width: 320px;
+    margin: 0px;
+    width: 320px;
+    overflow: auto;
+    text-overflow: auto;
+  }
+    
+  h4 {
+    font-size: 1.6em;
+      text-align: center;
+      color: black;
+      background-color: white;
+      border: 5px solid white;
+      margin: 0px;
+    width: 320px;
+    overflow: auto;
+    text-overflow: auto;  
+  }
+  #h6 {
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    background-color: #594157;
+    border: 5px solid #594157;
+    border-radius: 8px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    margin: 2em auto;
+    width: 1520px;
+    margin: 0px;
+    overflow: auto;
+    text-overflow: auto;
+    column-span: all;
+  }
+  .title{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin: 2.5em auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 500px;
+    overflow: auto;
+    text-overflow: auto;
+  }
+  .badge{
+    text-align: center;
+    margin: 2.5em auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 1500px;
+    column-count: 5;
+    column-width: 20%;
+    column-gap: 0%;
+  }
+  #romanOutputText{
+    font-size: 2.5em;
+    text-align: center;
+    color: white;
+    background-color: #594157;
+    border: 5px solid #594157;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin: 2em auto;
+    width: 1520px;
+    margin: 0px;
+    overflow: auto;
+    text-overflow: auto;
+    column-span: all;
+  }
+  #originalOutputText {
+    font-size: 2.5em;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: 5px solid white;
+    margin: 2em auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    width: 1520px;
+    overflow: auto;
+    text-overflow: auto;
+    column-span: all;
+  }
+  .textBox{
+    font-size: 1.25em;
+    text-align: center;
+    color: white;
+    margin: 2.5em auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 750px;
+    overflow: auto;
+    text-overflow: auto;
+  }
+  .textBox2{
+    font-size: 1.25em;
+    text-align: center;
+    color: white;
+    margin: 2.5em auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    width: 650px;
+    overflow: auto;
+    text-overflow: auto;
+  }
+  .button{
+  font-size: 1.25em;
+  text-align: center;
+  color: white;
+  margin: 2.5em auto;
+  margin-top: 2%;
+  width: 1000px;
+  overflow: auto;
+  text-overflow: auto;
+  }
+  .buttonAll{
+    font-size: 1.25em;
+    text-align: center;
+    color: white;
+    margin: 2.5em auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 1000px;
+    overflow: auto;
+    text-overflow: auto;
+    column-span: all;
+    }
+    
+  #button1 , #button2 {
+    display:inline-block;
+    }
+    #button3 , #button4 {
+      display:inline-block;
+      }
+  .textBox1{
+    font-size: 1.25em;
+    text-align: center;
+    color: white;
+    margin: 2.5em auto;
+    margin-top: 2%;
+    width: 400px;
+    overflow: auto;
+    text-overflow: auto;
+  }
+  .smallText{
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    margin: 1.5em auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width:1100px;
+    overflow: auto;
+    text-overflow: auto;
+
+  }
+  #bigText{
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    margin: 1.5em auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width:1300px;
+    overflow: auto;
+    text-overflow: auto;
+
+  }
+  hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+  }
+  #statHeader1 {
+    font-size: 2.5em;
+    color: white;
+    overflow: auto;
+    text-overflow: auto;
+    text-align: center;
+    margin: 2.5em auto;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    width: 500px;
+    column-span: all;
+  }
+  #statHeader2 {
+    font-size: 2.5em;
+    color: white;
+    overflow: auto;
+    text-overflow: auto;
+    text-align: center;
+    margin: 2.5em auto;
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+    width: 500px;
+    column-span: all;
+  }
+  .header {
+    font-size: 2.5em;
+    color: white;
+    overflow: auto;
+    text-overflow: auto;
+    text-align: center;
+    margin: 2.5em auto;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    width: 320px;
+  }
+  #stat1Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+    #stat2Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat3Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat4Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat5Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat6Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat7Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat8Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat9Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat10Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat11Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat12Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat13Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat2Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat14Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat15Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat16Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat17Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat18Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat19Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #stat20Output {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+   #white {
+    color: white;
+    background-color: #594157;
+    border-color: #594157;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat1Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat2Output {
+      color: black;
+      background-color: white;
+      border-color: white;
+      text-align: center;
+      font-size: .8em;
+  }
+  #sStat3Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat4Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat5Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat6Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat7Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat8Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat9Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat10Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat11Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat12Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat13Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat14Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat15Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat16Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat17Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat18Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat19Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #sStat20Output {
+    color: black;
+    background-color: white;
+    border-color: white;
+    text-align: center;
+    font-size: .8em;
+  }
+  #tat1 , #stat1 {
+    display:inline-block;
+    }
+  #tat2 , #stat2 {
+    display:inline-block;
+    } 
+  #tat3 , #stat3 {
+    display:inline-block;
+    }
+  #tat4 , #stat4 {
+    display:inline-block;
+    }
+  #tat5 , #stat5 {
+  display:inline-block;
+  } 
+  #tat6 , #stat6 {
+  display:inline-block;
+  } 
+  #tat7 , #stat7 {
+  display:inline-block;
+  } 
+  #tat8 , #stat8 {
+  display:inline-block;
+  } 
+  #tat9 , #stat9 {
+  display:inline-block;
+  } 
+  #tat10 , #stat10 {
+  display:inline-block;
+  } 
+  #tat11 , #stat11 {
+  display:inline-block;
+  } 
+  #tat12 , #stat12 {
+  display:inline-block;
+  } 
+  #tat13 , #stat13 {
+  display:inline-block;
+  } 
+  #tat14 , #stat14 {
+  display:inline-block;
+  } 
+  #tat15 , #stat15 {
+  display:inline-block;
+  } 
+  #tat16 , #stat16 {
+  display:inline-block;
+  } 
+  #tat17 , #stat17 {
+  display:inline-block;
+  } 
+  #tat18 , #stat18 {
+  display:inline-block;
+  } 
+  #tat19 , #stat19 {
+  display:inline-block;
+  } 
+  #tat20 , #stat20 {
+  display:inline-block;
+  } 
+  #tTat1 , #sStat1 {
+    display:inline-block;
+    }
+  #tTat2 , #sStat2 {
+    display:inline-block;
+    } 
+  #tTat3 , #sStat3 {
+    display:inline-block;
+    }
+  #tTat4 , #sStat4 {
+    display:inline-block;
+    }
+  #tTat5 , #sStat5 {
+  display:inline-block;
+  } 
+  #tTat6 , #sStat6 {
+  display:inline-block;
+  } 
+  #tTat7 , #sStat7 {
+  display:inline-block;
+  } 
+  #tTat8 , #sStat8 {
+  display:inline-block;
+  } 
+  #tTat9 , #sStat9 {
+  display:inline-block;
+  } 
+  #tTat10 , #sStat10 {
+  display:inline-block;
+  } 
+  #tTat11 , #sStat11 {
+  display:inline-block;
+  } 
+  #tTat12 , #sStat12 {
+  display:inline-block;
+  } 
+  #tTat13 , #sStat13 {
+  display:inline-block;
+  } 
+  #tTat14 , #sStat14 {
+  display:inline-block;
+  } 
+  #tTat15 , #sStat15 {
+  display:inline-block;
+  } 
+  #tTat16 , #sStat16 {
+  display:inline-block;
+  } 
+  #tTat17 , #sStat17 {
+  display:inline-block;
+  } 
+  #tTat18 , #sStat18 {
+  display:inline-block;
+  } 
+  #tTat19 , #sStat19 {
+  display:inline-block;
+  } 
+  #tTat20 , #sStat20 {
+  display:inline-block;
+  } 

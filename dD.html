@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">        
+        <title>Roman Numeral Translator</title>
+        <link rel="stylesheet" href="dD.css">
+        <script src="./dD.js"></script>
+        <noscript>Your browser does not support JavaScript! Sucks to be you!</noscript>
+        <script src="https://kit.fontawesome.com/797785b0de.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+        <!--Title and Introduction to the website-->
+        <div id= "title">
+        Dungeons and Dragons Basic Character Creator
+        </div>
+        <div class="mainHeadersSection">
+            <a href="http://localhost:8080/toolsHome.html"> 
+                <button type="button" onclick>
+                    Austin's Tools</button></a>
+        </div>
+        <hr>
+        <!-- <div class="gameSection">
+                <a href="http://localhost:8080/diceSimple.html"> 
+                    <button type="button" onclick>
+                        Simple Dice Roll</button>
+                </a> 
+        </div> -->
+        <div class = "textBox">
+                Enter your character's name: <input type="text" id="nameInput" placeholder= "Can you Count?">
+                    <br>
+                    <br>
+                    Enter your character's age: <input type="number" id="ageInput" placeholder= "Can you Count?">
+                    <br>
+                    <br>
+                    Enter your character's class: <input type="text" id="classInput" placeholder= "Can you Count?">
+                    <br>
+                    <br>
+                    Enter your character's race: <input type="text" id="raceInput" placeholder= "Can you Count?">
+                    <br>
+                    <br>
+
+                    <!--game count clicks-->
+                    <!--submit button that shoots off a bunch of functions etc.-->
+                    <div id="button"><button onclick="output()">Submit</button></div>
+        </div> 
+        <div class="badge">
+               
+            <h1 id="basicOutputText">
+                Your basic character information will be here.
+            </h1>
+            <h2>
+                    <li id=nameOutput> &nbsp;</li>
+                    <li id=ageOutput></li>
+                    <li id=classOutput></li>
+                    <li id=raceOutput></li>
+            </h2>
+            <h3 id="statOutputText">
+                Your stats will be here.
+            </h3>
+            <h4>
+                 <li id=strengthTOutput>&nbsp;</li>
+                 <li id=strengthBOutput></li>
+                <li id=dexterityTOutput></li>
+                <li id=dexterityBOutput></li>
+                <li id=constitutionTOutput></li>
+                <li id=constitutionBOutput></li>
+                <li id=intelligenceTOutput></li>
+                <li id=intelligenceBOutput></li>
+                <li id=wisdomTOutput></li>
+                <li id=wisdomBOutput></li>
+                <li id=charismaTOutput></li>
+                <li id=charismaBOutput></li>
+                <li id=hitPointTOutput></li>
+            </h4>
+            <h6>
+                <i class="fab fa-d-and-d"></i> Dungeons and Dragons, Oh my! <i class="fab fa-d-and-d"></i>
+            </h6>
+
+        </div>
+</html>

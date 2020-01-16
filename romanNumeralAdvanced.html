@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">        
+        <title>Roman Numeral Translator</title>
+        <link rel="stylesheet" href="romanNumeralAdvanced.css">
+        <script src="./romanNumeralAdvanced.js"></script>
+        <noscript>Your browser does not support JavaScript! Sucks to be you!</noscript>
+    </head>
+    <body>
+        <main>
+        <!--Title and Introduction to the website-->
+        <div id= "title">
+        Roman Numeral Translator
+        </div>
+        <div class="mainHeadersSection">
+            <a href="http://localhost:8080/toolsHome.html"> 
+                <button type="button" onclick>
+                    Austin's Tools</button></a>
+                </div>
+                <hr>
+        <!-- <div class="gameSection">
+                <a href="http://localhost:8080/diceSimple.html"> 
+                    <button type="button" onclick>
+                        Simple Dice Roll</button>
+                </a> 
+        </div> -->
+        <div class = "textBox">
+                Translate a Number to a Roman Numeral: <input type="text" id="input" placeholder= "Can you Count?">
+                    <br>
+                    <br>
+                    <!--game count clicks-->
+                    <!--submit button that shoots off a bunch of functions etc.-->
+                    <div id="button"><button onclick="toRoman()">Submit</button></div>
+        </div> 
+        <div class="badge">
+               
+            <h1 id="originalOutputText">
+                Your original Number will be here.
+            </h1>
+            <h2 id="originalOutput">
+                    &nbsp;
+            </h2>
+            <h3 id="romanOutputText">
+                The Roman Numeral translation will be here.
+            </h3>
+            <h4 id="romanOutput">
+                &nbsp;
+            </h4>
+            <h6>
+                    When in Rome count like the Romans!
+            </h6>
+
+        </div>
+
+        <hr>
+        <div class = "textBox1">
+            Translate a Roman Numeral to a Number: <input type="text" id="inputNumber" placeholder= "Can you Count?">
+                <br>
+                <br>
+                <!--game count clicks-->
+                <!--submit button that shoots off a bunch of functions etc.-->
+                <div id="button"><button onclick="toNumber()">Submit</button></div>
+    </div> 
+    <div class="badge">
+           
+        <h1 id="originalOutputText1">
+            Your original  Roman Numeral will be here.
+        </h1>
+        <h2 id="originalOutput1">
+                &nbsp;
+        </h2>
+        <h3 id="romanOutputText1">
+            The Number translation will be here.
+        </h3>
+        <h4 id="romanOutput1">
+            &nbsp;
+        </h4>
+        <h6>
+                When in Rome count like the Romans!
+        </h6>
+
+    </div>
+</html>

@@ -1,0 +1,558 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">        
+        <title>Sport Statistic Counter</title>
+        <link rel="stylesheet" href="sportStatistic.css">
+        <script src="./sportStatistic.js"></script>
+        <noscript>Your browser does not support JavaScript! Sucks to be you!</noscript>
+        <script src="https://kit.fontawesome.com/797785b0de.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <main>
+        <!--Title and Introduction to the website-->
+        <div class= "title">
+        Sport Statistics Counter
+        </div>
+        <div class="mainHeadersSection">
+            <a href="http://localhost:8080/projects.html"> 
+                <button type="button" onclick>
+                    Austin's Projects</button></a>
+    </div>
+        <hr>
+        <!-- <div class="gameSection">
+                <a href="http://localhost:8080/diceSimple.html"> 
+                    <button type="button" onclick>
+                        Simple Dice Roll</button>
+                </a> 
+        </div> -->
+        <p class = "header">
+                Setup
+        </p>
+        <div class = "textBox">
+            Input the first player or team's name. &nbsp; <input type="text" id="player1" placeholder= "Roger Federer"></input>
+                    <br>
+                    <br>
+        </div> 
+        <div class = "textBox">
+                Input the second player or team's name. &nbsp; <input type="text" id="player2" placeholder= "Rafael Nadal"></input>
+                        <br>
+                        <br>
+                        <div id="button"><button onclick="namesOutput()">Submit</button></div> 
+            </div>
+            <hr>
+        <div class = "container">
+                <div id="statHeader1">Player or Team One Stat Names </div>
+            <div class = "textBox">
+                <div id="tat1"> Input the first stat of the first player or team. &nbsp&nbsp 
+                </div><input type="text" id="stat1" placeholder= "Forehand Volley Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat2"> Input the second stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat2" placeholder= "Backhand Volley Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat3"> Input the third stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat3" placeholder= "Forehand Drop Winner"></input>
+                        <br>
+            </div> 
+            <div class = "textBox">
+                <div id="tat4"> Input the fourth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat4" placeholder= "Backhand Drop Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat5"> Input the fifth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat5" placeholder= "Forehand Drive Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat6"> Input the sixth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat6" placeholder= "Backhand Drive Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat7"> Input the seventh stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat7" placeholder= "Forehand Dink Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat8"> Input the eighth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat8" placeholder= "Backhand Dink Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat9"> Input the ninth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat9" placeholder= "Ernie Winner"> </input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat10"> Input the tenth stat of the first player or team. &nbsp&nbsp
+            </div> <input type="text" id="stat10" placeholder= "ATP Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat11"> Input the eleventh stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat11" placeholder= "Forehand Volley Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat12"> Input the twelfth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat12" placeholder= "Backhand Volley Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat13"> Input the thirteenth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat13" placeholder= "Forehand Drop Error"></input>
+                        <br>
+            </div>  
+            <div class = "textBox">
+                <div id="tat14"> Input the fourteenth stat of the first player or team. &nbsp&nbsp 
+            </div><input type="text" id="stat14" placeholder= "Backhand Drop Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat15"> Input the fifteenth stat of the first player or team. &nbsp&nbsp 
+            </div><input type="text" id="stat15" placeholder= "Forehand Drive Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat16"> Input the sixteenth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat16" placeholder= "Backhand Drive Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat17"> Input the seventeenth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat17" placeholder= "Forehand Dink Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat18"> Input the eighteenth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat18" placeholder= "Backhand Dink Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat19"> Input the nineteenth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat19" placeholder= "Ernie Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tat20"> Input the twentieth stat of the first player or team. &nbsp&nbsp
+            </div><input type="text" id="stat20" placeholder= "ATP Error"></input>
+                        <br>
+                        <br>
+            </div>
+            <div class="buttonAll"><button onclick="statNames1()">Submit</button></div>
+        </div>
+        </div>
+            <hr> 
+            <div class = "container">
+                <div id="statHeader2">Player or Team Two Stat Names </div>
+            <div class = "textBox">
+                <div id="tTat1"> Input the first stat of the second player or team. &nbsp&nbsp 
+                </div><input type="text" id="sStat1" placeholder= "Forehand Volley Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat2"> Input the second stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat2" placeholder= "Backhand Volley Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat3"> Input the third stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat3" placeholder= "Forehand Drop Winner"></input>
+                        <br>
+            </div> 
+            <div class = "textBox">
+                <div id="tTat4"> Input the fourth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat4" placeholder= "Backhand Drop Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat5"> Input the fifth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat5" placeholder= "Forehand Drive Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat6"> Input the sixth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat6" placeholder= "Backhand Drive Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat7"> Input the seventh stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat7" placeholder= "Forehand Dink Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat8"> Input the eighth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat8" placeholder= "Backhand Dink Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat9"> Input the ninth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat9" placeholder= "Ernie Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat10"> Input the tenth stat of the second player or team. &nbsp&nbsp
+            </div> <input type="text" id="sStat10" placeholder= "ATP Winner"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat11"> Input the eleventh stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat11" placeholder= "Forehand Volley Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat12"> Input the twelfth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat12" placeholder= "Backhand Volley Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat13"> Input the thirteenth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat13" placeholder= "Forehand Drop Error"></input>
+                        <br>
+            </div>  
+            <div class = "textBox">
+                <div id="tTat14"> Input the fourteenth stat of the second player or team. &nbsp&nbsp 
+            </div><input type="text" id="sStat14" placeholder= "Backhand Drop Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat15"> Input the fifteenth stat of the second player or team. &nbsp&nbsp 
+            </div><input type="text" id="sStat15" placeholder= "Forehand Drive Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat16"> Input the sixteenth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat16" placeholder= "Backhand Drive Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat17"> Input the seventeenth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat17" placeholder= "Forehand Dink Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat18"> Input the eighteenth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat18" placeholder= "Backhand Dink Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat19"> Input the nineteenth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat19" placeholder= "Ernie Error"></input>
+                        <br>
+            </div>
+            <div class = "textBox">
+                <div id="tTat20"> Input the twentieth stat of the second player or team. &nbsp&nbsp
+            </div><input type="text" id="sStat20" placeholder= "ATP Error"> </input>
+                        <br>
+            </div>
+            <div class="buttonAll"><button onclick="statNames2()">Submit</button></div>
+        </div>
+            <hr>
+            <p class = "header">
+                Recording the Stats
+            </p>         
+               
+        <div class="badge">
+                <div id="romanOutputText">
+                        <i class="fas fa-table-tennis"> </i> Player / Team One's Stats are <i class="fas fa-table-tennis"></i>
+                </div>
+            <h2>
+                <div id="stat1Name">
+                        Stat One
+                </div>
+                <input type="number" id="stat1Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statOneAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat2Name">
+                         Stat Two
+                </div>
+                <input type="number" id="stat2Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statTwoAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat3Name">
+                        Stat Three
+                </div>
+                <input type="number" id="stat3Output" value="0"> </input> 
+            </h2>
+            <h2><div id="button"><button onclick="statThreeAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat4Name">
+                        Stat Four
+                </div>
+                <input type="number" id="stat4Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statFourAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat5Name">
+                        Stat Five
+                </div>
+                <input type="number" id="stat5Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statFiveAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat6Name">
+                        Stat Six
+                </div>
+                <input type="number" id="stat6Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statSixAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat7Name">
+                        Stat Seven
+                </div>
+                <input type="number" id="stat7Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statSevenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat8Name">
+                        Stat Eight
+                </div>
+                <input type="number" id="stat8Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statEightAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat9Name">
+                        Stat Nine
+                </div>
+                <input type="number" id="stat9Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statNineAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat10Name">
+                        Stat Ten
+                </div>
+                <input type="number" id="stat10Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statTenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat11Name">
+                        Stat Eleven
+                </div>
+                <input type="number" id="stat11Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statElevenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat12Name">
+                        Stat Twelve
+                </div>
+                <input type="number" id="stat12Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statTwelveAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat13Name">
+                        Stat Thirteen
+                </div>
+                <input type="number" id="stat13Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statThirteenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat14Name">
+                        Stat Fourteen
+                </div>
+                <input type="number" id="stat14Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statFourteenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat15Name">
+                        Stat Fifteen
+                </div>
+                <input type="number" id="stat15Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statFifteenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat16Name">
+                        Stat Sixteen
+                </div>
+                <input type="number" id="stat16Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statSixteenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat17Name">
+                        Stat Seventeen
+                </div>
+                <input type="number" id="stat17Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statSeventeenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat18Name">
+                        Stat Eighteen
+                </div>
+                <input type="number" id="stat18Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statEighteenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat19Name">
+                        Stat Nineteen
+                </div>
+                <input type="number" id="stat19Output" value="0"> </input>
+            </h2>
+            <h2><div id="button"><button onclick="statNineteenAdd()">Add One</button></div></h2>
+            <h2>
+                <div id="stat20Name">
+                        Stat Twenty
+                </div>
+                <input type="number" id="stat20Output" value="0"> </input>    
+            </h2>
+            <h2><div id="button"><button onclick="statTwentyAdd()">Add One</button></div>
+                </h2>
+            </div>
+                <div class="badge">
+                        <div id="originalOutputText">
+                                <i class="fas fa-quidditch"></i> Player / Team Two's Stats are <i class="fas fa-quidditch"></i>
+                        </div>
+            <h4>
+                <div id="sStat1Name">
+                        Stat One
+                </div>
+                <input type="number" id="sStat1Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatOneAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat2Name">
+                         Stat Two
+                </div>
+                <input type="number" id="sStat2Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatTwoAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat3Name">
+                        Stat Three
+                </div>
+                <input type="number" id="sStat3Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatThreeAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat4Name">
+                        Stat Four
+                </div>
+                <input type="number" id="sStat4Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatFourAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat5Name">
+                        Stat Five
+                </div>
+                <input type="number" id="sStat5Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatFiveAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat6Name">
+                        Stat Six
+                </div>
+                <input type="number" id="sStat6Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatSixAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat7Name">
+                        Stat Seven
+                </div>
+                <input type="number" id="sStat7Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatSevenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat8Name">
+                        Stat Eight
+                </div>
+                <input type="number" id="sStat8Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatEightAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat9Name">
+                        Stat Nine
+                </div>
+                <input type="number" id="sStat9Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatNineAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat10Name">
+                        Stat Ten
+                </div>
+                <input type="number" id="sStat10Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatTenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat11Name">
+                        Stat Eleven
+                </div>
+                <input type="number" id="sStat11Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatElevenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat12Name">
+                        Stat Twelve
+                </div>
+                <input type="number" id="sStat12Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatTwelveAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat13Name">
+                        Stat Thirteen
+                </div>
+                <input type="number" id="sStat13Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatThirteenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat14Name">
+                        Stat Fourteen
+                </div>
+                <input type="number" id="sStat14Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatFourteenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat15Name">
+                        Stat Fifteen
+                </div>
+                <input type="number" id="sStat15Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatFifteenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat16Name">
+                        Stat Sixteen
+                </div>
+                <input type="number" id="sStat16Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatSixteenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat17Name">
+                        Stat Seventeen
+                </div>
+                <input type="number" id="sStat17Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatSeventeenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat18Name">
+                        Stat Eighteen
+                </div>
+                <input type="number" id="sStat18Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatEighteenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat19Name">
+                        Stat Nineteen
+                </div>
+                <input type="number" id="sStat19Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatNineteenAdd()">Add One</button></div></h4>
+            <h4>
+                <div id="sStat20Name">
+                        Stat Twenty
+                </div>
+                <input type="number" id="sStat20Output" value="0"> </input>
+            </h4>
+            <h4><div id="button"><button onclick="sStatTwentyAdd()">Add One</button></div>
+                </h4>
+                <h6 id="h6">
+                <i class="fas fa-table-tennis"> </i> &nbsp; Keep Playing Sports! &nbsp;<i class="fas fa-table-tennis"> </i>
+        </h6>
+</div>
+        </div> 
+    </main>
+</html>
